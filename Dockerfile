@@ -1,8 +1,8 @@
 From node
+ENV LANG="ja_JP.UTF-8" LANGUAGE="ja_JP:ja" LC_ALL="ja_JP.UTF-8"
 
 WORKDIR /virtual-zenn
 
-ENV LANG="ja_JP.UTF-8" LANGUAGE="ja_JP:ja" LC_ALL="ja_JP.UTF-8"
 RUN apt-get update \
       && apt-get -y install \
         vim \
@@ -22,7 +22,8 @@ RUN apt-get update \
 
 WORKDIR /dotfiles
 
-RUN pip3 install vim-vint \
+RUN pip3 install --upgrade pip \
+      && pip3 install vim-vint \
       && npm install -g grunt-cli \
       && npm install \
         grunt \
