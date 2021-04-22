@@ -24,7 +24,7 @@ docker-run-rm:
 
 .PHONY: docker-run-v
 docker-run-v:
-	docker run -p 8001:8000 -v $(shell pwd)/articles/virtual-zenn:/note/articles -it $(NAME) zsh -c "npx zenn new:article; npx zenn preview &; vim articles"
+	docker run -p 8001:8000 -v $(shell pwd)/articles/stage:/virtual-zenn/articles -it $(NAME) zsh -c "npx zenn new:article; npx zenn preview &; vim articles"
 
 .PHONY: docker-run-e
 docker-run-e:
