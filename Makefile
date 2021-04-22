@@ -28,4 +28,4 @@ docker-run-v:
 
 .PHONY: docker-run-e
 docker-run-e:
-	docker run -p 8002:8000 -v $(shell pwd)/articles:/note/articles -it $(EDIT) zsh -c "npx zenn preview & ; zsh"
+	docker run -p 8002:8000 -v $(shell pwd)/articles:/virtual-zenn/articles -it $(EDIT) zsh -c "npx zenn preview & ; zsh"
