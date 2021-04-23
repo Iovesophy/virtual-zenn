@@ -11,7 +11,7 @@ RUN apt-get update \
         shellcheck \
       && git init \
       && git remote add origin https://github.com/Iovesophy/virtual-zenn.git \
-      && git pull origin master \
+      && git pull origin dev1-auto-upload-function \
       && npm init --yes \
       && npm install -g grunt-cli \
       && npm install \
@@ -20,17 +20,14 @@ RUN apt-get update \
         zenn-cli \
       && npx zenn init
 
-WORKDIR /dotfiles
+WORKDIR /virtual-zenn/dotfiles
 
 RUN pip3 install --upgrade pip \
       && pip3 install vim-vint \
       && npm install -g grunt-cli \
       && npm install \
         grunt \
-        grunt-zshlint \
-      && git init \
-      && git remote add origin https://github.com/Iovesophy/dotfiles.git \
-      && git pull origin add-dotfiles-vm
+        grunt-zshlint
 
 RUN ./test.sh
 
