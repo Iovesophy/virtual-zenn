@@ -1,7 +1,6 @@
 source ~/.zsh/completion/git-prompt.sh
 setopt PROMPT_SUBST
-echo $STATUS
-PS1='virtualzenn-mode@📝 %c$(__git_ps1 " (%s)")]\$ '
+PS1='📝 %c$(__git_ps1 " (%s)")]\$ '
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
 zstyle ':completion:*:default' list-colors ${(s.:.)LSCOLORS}
