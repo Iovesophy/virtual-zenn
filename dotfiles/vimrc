@@ -1,7 +1,5 @@
 "vim-plug Start.  https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
-" markdown
-Plug 'plasticboy/vim-markdown'
 call plug#end()
 " vim-plug Fin.
 " vimrc quick setting
