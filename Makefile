@@ -3,6 +3,9 @@ NAME := virtual-zenn
 .PHONY: main
 main: docker-build docker-run-vim
 
+.PHONY: book
+book: docker-build docker-run-vim-book
+
 .PHONY: create
 create: docker-build docker-run-create
 
