@@ -1,8 +1,24 @@
 # Virtual-zenn
 
+This is auto initialize setting for zenn.dev 
+
+#### keywords
++ Zenn.dev
++ Docker
++ Makefile
++ Node.js
++ npm
++ vim
+
+- Attention notice
+If the configured zenn.dev already exists , this script change the configuration your environment.
+
+## Dependency
+Tested only zsh on macOS , so if you want to use script for bash . Please regulation yourself .
+
 ## Usage
 
-+ Install Docker
++ Install Docker (https://docs.docker.com/docker-for-mac/install/)
 + Clone this repository
 + Open terminal.app
 + Setting this repository your git environment
