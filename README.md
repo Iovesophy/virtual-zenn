@@ -15,7 +15,7 @@ This is an initial setup script that can automatically link zenn.dev and github 
 If the configured zenn.dev already exists , this script change the configuration your environment.
 
 ## Dependency
-Tested only zsh on macOS , so if you want to use script for bash . Please regulation yourself .
+Tested only zsh on macOS , so if you want to use script for Windows . Please regulation yourself .
 
 ## Usage
 
