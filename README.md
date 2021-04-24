@@ -1,9 +1,10 @@
 # Virtual-zenn
 
-This is auto initialize setting for zenn.dev 
+This is an initial setup script that can automatically link zenn.dev and github and write articles,books with just make.
 
 #### keywords
 + Zenn.dev
++ Github
 + Docker
 + Makefile
 + Node.js
@@ -27,8 +28,10 @@ Tested only zsh on macOS , so if you want to use script for bash . Please regula
 ```
 $ cd virtual-zenn
 $ rm -r -f .git
-$ git init;git remote add oritin <your env>
-$ git config user.name "your name" ; git config user.email "your email"
+$ git init
+$ git remote add oritin <your env>
+$ git config user.name "your name" 
+$ git config user.email "your email"
 ```
 And please read this content below
 
