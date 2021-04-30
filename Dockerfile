@@ -11,7 +11,7 @@ RUN apt-get update \
         shellcheck \
       && git init \
       && git remote add origin https://github.com/Iovesophy/virtual-zenn.git \
-      && git pull origin dev1-auto-upload-function \
+      && git pull origin main \
       && npm init --yes \
       && npm install -g grunt-cli \
       && npm install \
