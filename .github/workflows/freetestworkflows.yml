@@ -1,9 +1,10 @@
 name: CI to Docker Hub
 on:
     push:
-        branches: [ master ]
-    schedule:
-    - cron:  '30 14 * * *' # 5 o'clock,30 min everyday
+        branches: [ dev5-githubactions ]
+    pull_request:
+        branches: [ dev5-githubactions ]
+
 jobs:
     build:
         runs-on: ubuntu-latest
