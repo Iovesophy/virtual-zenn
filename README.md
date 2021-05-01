@@ -29,7 +29,7 @@ Tested only zsh on macOS , so if you want to use script for Windows . Please reg
 $ cd virtual-zenn
 $ rm -r -f .git
 $ git init
-$ git remote add oritin <your env>
+$ git remote add origin <your env>
 $ git config user.name "your name" 
 $ git config user.email "your email"
 ```
