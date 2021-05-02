@@ -26,3 +26,13 @@ jobs:
                     tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
             - name: Image digest
               run: echo ${{ steps.docker_build.outputs.digest }}
+
+            - name: Line Notify on Failure
+              uses: snow-actions/line-notify@v1.0.0
+              if: failure()
+              with:
+                access_token: ${{ secrets.LINE_KEY_NAME }}
+                message: virtual-zenn failed build
+
+
+              
