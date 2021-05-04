@@ -100,7 +100,6 @@ $ make upload-book
   + update virtual-zenn
 ```
 $ make update
-$ make update
 ```
 
 + case8
