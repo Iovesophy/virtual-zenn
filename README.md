@@ -96,6 +96,19 @@ $ make upload
 $ make upload-book
 ```
 
++ case7
+  + update virtual-zenn
+```
+$ make update
+$ make update
+```
+
++ case8
+  + check contents title
+```
+$ make ls
+```
+
 ※ You can custom, so try any setting yourself.
 
 
