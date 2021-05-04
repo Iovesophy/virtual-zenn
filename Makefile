@@ -18,6 +18,10 @@ ls: docker-build docker-run-check
 .PHONY: reset
 reset: docker-run-rm
 
+.PHONY: update
+update:
+	git pull origin master
+
 .PHONY: upload
 upload:
 	mv $(shell pwd)/articles/stage/* $(shell pwd)/articles/ ; git add $(shell pwd)/articles/ ; git commit -m "VIRTUALZENN: auto upload articles" ; git push origin HEAD

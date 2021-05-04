@@ -27,12 +27,11 @@ Tested only zsh on macOS , so if you want to use script for Windows . Please reg
 #### For example
 ```
 $ cd virtual-zenn
-$ rm -r -f .git
-$ git init
-$ git remote add origin <your env>
+$ git remote add <your env> <your env>
 $ git config user.name "your name" 
 $ git config user.email "your email"
 ```
+
 And please read this content below
 
 #### Zenn Contents
@@ -50,6 +49,12 @@ $ make
 
 + auto create new article and auto start vim
 + done,start your zenn life
+
+If you need update virtual-zenn ↓
+
+```
+$ make update
+```
 
 ### make option list
 
