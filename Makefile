@@ -12,8 +12,15 @@ create: docker-build docker-run-create
 .PHONY: edit
 edit: docker-build docker-run-edit
 
+.PHONY: ls
+ls: docker-build docker-run-check
+
 .PHONY: reset
 reset: docker-run-rm
+
+.PHONY: update
+update:
+	git pull origin master
 
 .PHONY: upload
 upload:
@@ -30,6 +37,14 @@ docker-run-rm:
 .PHONY: docker-run-create
 docker-run-create:
 	docker run -v $(shell pwd)/articles/stage:/virtual-zenn/articles -it $(NAME) zsh -c "npx zenn new:article"
+
+.PHONY: docker-run-check
+docker-run-check:
+	docker run -v $(shell pwd)/articles:/virtual-zenn/articles -it $(NAME) zsh -c "npx zenn list:articles"
+	docker run -v $(shell pwd)/articles/stage:/virtual-zenn/articles -it $(NAME) zsh -c "npx zenn list:articles"
+	docker run -v $(shell pwd)/articles:/virtual-zenn/articles -it $(NAME) zsh -c "npx zenn list:books"
+	docker run -v $(shell pwd)/articles/stage:/virtual-zenn/articles -it $(NAME) zsh -c "npx zenn list:books"
+
 
 .PHONY: create-book
 create-book: docker-build docker-run-create-book
