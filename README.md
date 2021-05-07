@@ -1,5 +1,7 @@
 # Virtual-zenn
 
+[![CI to Docker Hub](https://github.com/Iovesophy/virtual-zenn/actions/workflows/scheduled_workflows.yml/badge.svg?branch=master)](https://github.com/Iovesophy/virtual-zenn/actions/workflows/scheduled_workflows.yml)
+
 This is an initial setup script that can automatically link zenn.dev and github and write articles,books with just make.
 
 #### keywords
